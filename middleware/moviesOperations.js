@@ -9,8 +9,9 @@ const {Genre} = require('../models/genre')
 async function getMovies(req,res) {
 
     //get the Movies
-    Movie.find().sort('name').then((movies)=>res.send(movies))
-                            .catch((err)=>res.status(404).send('No course found'))
+    Movie.find().sort('name')
+        .then((movies)=>res.send(movies))
+        .catch((err)=>res.status(404).send('No course found'))
 }
 
 
