@@ -1,3 +1,6 @@
 node_modules
-
+config
 yarn-error.log
+logfile.log
+uncaughtExceptions.log
+uncaughtRejections.log
